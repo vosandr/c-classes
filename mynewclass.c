@@ -21,3 +21,8 @@ int mynewclass_destroy(t_mynewclass* object) {
     object=NULL;
     return 0;
 }
+
+void mynewclass_set_listener(t_mynewclass* object, t_mynewclass_events* listener)
+{
+    object->listener=listener;
+}
