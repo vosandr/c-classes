@@ -23,3 +23,11 @@ void myclass_destroy(t_myclass* object);
 void myclass_set_listener(t_myclass* object, t_myclass_events* listener);
 
 //Память о предках
+void myclass_set_parent(t_myclass* object, void* parent);
+void* myclass_get_parent(t_myclass* object);
+
+//Различные методы класса, определяющие свойства
+void myclass_set_value(t_myclass* object, int value);
+int myclass_get_value(t_myclass* object);
+
+#endif
